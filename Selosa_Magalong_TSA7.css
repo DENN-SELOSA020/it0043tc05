@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(bggif.gif);
+    background-image: url('bggif.gif');
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: white;
@@ -34,6 +34,7 @@ body {
     background-color: #fff;
     border-radius: 10px;
     color: #000;
+    border: 10px solid grey;
 }
 
 .operations, .btn-group {
@@ -83,12 +84,11 @@ h2 {
 .simulation-box {
     flex: 2;
     display: flex;
-    flex-direction: column;
-    border: 5px solid white;
+    flex-direction: row;
+    border: 10px solid grey;
     border-radius: 5px;
     min-height: 75vh;
     justify-content: flex-start;
-    align-items: center;
     padding: 20px;
     background-color: white;
 }
@@ -112,16 +112,23 @@ h2 {
     transform: scale(1.1);
 }
 
-#red {
-    background-color: red;
+#box1, #box2, #box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
 }
 
-#blue {
-    background-color: blue;
+#box1 {
+    background-image: url('earth.jpg');
 }
 
-#green {
-    background-color: green;
+#box2 {
+    background-image: url('sun.jpg');
+}
+
+#box3 {
+    background-image: url('moon.jpg');
 }
 
 .flexbox-operation, .align-item, .justify-content, .flex-direction, .flex-grow {
@@ -135,7 +142,7 @@ h2 {
     gap: 10px;
 }
 
-.flex-box{
+.flex-box {
     display: flex;
     flex-direction: row;
 }
