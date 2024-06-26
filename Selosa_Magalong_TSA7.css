@@ -114,19 +114,19 @@ h2 {
     transform: scale(1.1);
 }
 
-#sun {
+#earth {
     background-image: url('earth.jpg');
 }
 
-#moon {
+#sun {
     background-image: url('sun.jpg');
 }
 
-#earth {
+#moon {
     background-image: url('moon.jpg');
 }
 
-#sun, #moon, #earth {
+#earth, #sun, #moon {
     background-size: cover;
     background-position: center;
 }
