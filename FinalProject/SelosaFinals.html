@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="SelosaFinals.css">
+    <script src="https://kit.fontawesome.com/ce098c1ba0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                    <li><a href="#header" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-content">
+                <div class="picture">
+                    <img src="picture ko.jpg" alt="Profile Picture" class="profile-picture">
+                </div>
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Denn,</span><br> welcome to my <br> personal portfolio.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="picture ko ulit.jpg" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a student at Far Eastern University Institute of Technology studying the Bachelor of Science
+                        in Information Technology specializing in cybersecurity.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Athletic<br></span>Sprinting</li>
+                            <li><span>Contemplation<br></span>Always thinking about life</li>
+                            <li><span>Anxiety<br></span>Always thinking about the future</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Current<br></span>FEU Institute of Technology</li>
+                            <li><span>2021 - 2023<br></span>Laboratory Science High School - Romblon State University
+                            </li>
+                            <li><span>2017 - 2021<br></span>Laboratory Science High School - Romblon State University
+                            </li>
+                            <li><span>2011 - 2017<br></span>Odiongan South Central Elementary School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Pokemon Form and Table</h2>
+                    <p>This is my work is TSA2.</p>
+                    <a href="https://denn-selosa020.github.io/it0043tc05/selosa_tsa2.html" target="_blank">View
+                        Project</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>School Announcement</h2>
+                    <p>This is my work in TSA3.</p>
+                    <a href="https://denn-selosa020.github.io/it0043tc05/selosa_tsa3.html" target="_blank">View
+                        Project</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Pokemon Cards</h2>
+                    <p>This is our work in TSA4.</p>
+                    <a href="https://denn-selosa020.github.io/it0043tc05/selosa_magalong_tsa4.html" target="_blank"><h1></h1>View
+                        Project</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Mobile Legends</h2>
+                    <p>This is our work in TSA5.</p>
+                    <a href="https://denn-selosa020.github.io/it0043tc05/selosa_magalong_tsa5.html" target="_blank">View
+                        Project</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Mobile Legends Homepage</h2>
+                    <p>This is our work in TSA6.</p>
+                    <a href="https://denn-selosa020.github.io/it0043tc05/TSA6/selosa_magalong_tsa6.html"
+                        target="_blank">View Project</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Flex-box Simulator</h2>
+                    <p>This is our work in TSA7.</p>
+                    <a href="https://denn-selosa020.github.io/it0043tc05/Selosa_Magalong_TSA7.html" target="_blank">View
+                        Project</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Pokemon</h2>
+                    <p>This is my Midterm work.</p>
+                    <a href="https://denn-selosa020.github.io/it0043tc05/selosa_mpe.html" target="_blank">View
+                        Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>franzese.denn.selosa@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09602651553</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/im.at.your.doorstep?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/DennSelosa?t=bIze-DiYpurEmHxDVrn-8Q&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i></i></a>
+                        <a href="https://www.instagram.com/im.dead.tired?igsh=OTNxbW1semczejl0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/DENN-SELOSA020" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="copyright">
+        <p>&copy; 2024 Denn. All rights reserved.</p>
+    </footer>
+    <script src="SelosaFinals.js"></script>
+</body>
+
+</html>
