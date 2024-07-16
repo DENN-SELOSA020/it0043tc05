@@ -21,24 +21,23 @@ function closemenu(){
     sidemenu.style.right = "-200px";
 }
 
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        document.querySelectorAll('nav ul li a').forEach(link => {
-            link.classList.remove('active');
-        });
-        this.classList.add('active');
+document.addEventListener('DOMContentLoaded', (event) => {
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = form.elements['Name'].value;
+        const email = form.elements['Email'].value;
+        const message = form.elements['Message'].value;
+
+        if (name === '' || email === '' || message === '') {
+            alert('Please fill in all fields.');
+            return;
+        }
+
+        console.log('Form submitted:', { name, email, message });
+        alert('Thank you for your message, ' + name + '!');
+
+        form.reset();
     });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.menu-icon').addEventListener('click', function() {
-        const navLinks = document.querySelector('nav ul');
-        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-    });
-
-    document.querySelector('#contact form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        alert('Message sent!');
-    });
-});
-
