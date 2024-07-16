@@ -11,23 +11,26 @@
 
 <body>
     <div id="header">
+        <nav>
+            <img src="logo.png" alt="Logo" class="logo">
+            <ul id="sidemenu">
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contacts</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <div id="home">
         <div class="container">
-            <nav>
-                <img src="logo.png" alt="Logo" class="logo">
-                <ul id="sidemenu">
-                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
-                    <li><a href="#header" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-content">
+            <div class="home-content">
                 <div class="picture">
                     <img src="picture ko.jpg" alt="Profile Picture" class="profile-picture">
                 </div>
-                <div class="header-text">
+                <div class="home-text">
                     <h1>Hi, I'm <span>Denn,</span><br> welcome to my <br> personal portfolio.</h1>
                 </div>
             </div>
@@ -71,58 +74,81 @@
         </div>
     </div>
 
-    <div id="projects">
+    <div id="services">
         <div class="container">
-            <h1 class="sub-title">Projects</h1>
-            <div class="projects-list">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Pokemon Form and Table</h2>
-                    <p>This is my work is TSA2.</p>
-                    <a href="https://denn-selosa020.github.io/it0043tc05/selosa_tsa2.html" target="_blank">View
-                        Project</a>
+                    <i class="fa-solid fa-image"></i>
+                    <h2>Photoshop</h2>
+                    <p>Sharpening images and enhancing textures for a polished look.</p>
                 </div>
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>School Announcement</h2>
-                    <p>This is my work in TSA3.</p>
-                    <a href="https://denn-selosa020.github.io/it0043tc05/selosa_tsa3.html" target="_blank">View
-                        Project</a>
+                    <i class="fa-solid fa-pen"></i>
+                    <h2>Logo Design</h2>
+                    <p>Creating memorable and unique logos that represent your brand identity.</p>
                 </div>
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Pokemon Cards</h2>
-                    <p>This is our work in TSA4.</p>
-                    <a href="https://denn-selosa020.github.io/it0043tc05/selosa_magalong_tsa4.html" target="_blank"><h1></h1>View
-                        Project</a>
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h2>Tutoring</h2>
+                    <p>I provide personalized one-on-one tutoring sessions tailored to each student’s unique learning
+                        style and needs.</p>
                 </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Mobile Legends</h2>
-                    <p>This is our work in TSA5.</p>
-                    <a href="https://denn-selosa020.github.io/it0043tc05/selosa_magalong_tsa5.html" target="_blank">View
-                        Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Works</h1>
+            <div class="works-list">
+                <div class="work">
+                    <img src="pokemon forms and table.png" alt="Pokemon Forms and Table">
+                    <div class="layer">
+                        <h3>Pokemon Forms and Table</h3>
+                        <a href="https://denn-selosa020.github.io/it0043tc05/selosa_tsa2.html" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Mobile Legends Homepage</h2>
-                    <p>This is our work in TSA6.</p>
-                    <a href="https://denn-selosa020.github.io/it0043tc05/TSA6/selosa_magalong_tsa6.html"
-                        target="_blank">View Project</a>
+                <div class="work">
+                    <img src="pokemon cards.png" alt="Pokemon Cards">
+                    <div class="layer">
+                        <h3>Pokemon Cards</h3>
+                        <a href="https://denn-selosa020.github.io/it0043tc05/selosa_magalong_tsa4.html"
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Flex-box Simulator</h2>
-                    <p>This is our work in TSA7.</p>
-                    <a href="https://denn-selosa020.github.io/it0043tc05/Selosa_Magalong_TSA7.html" target="_blank">View
-                        Project</a>
+                <div class="work">
+                    <img src="mobile legends grid.png" alt="Mobile Legends Grid">
+                    <div class="layer">
+                        <h3>Mobile Legends Grid</h3>
+                        <a href="https://denn-selosa020.github.io/it0043tc05/selosa_magalong_tsa5.html"
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Pokemon</h2>
-                    <p>This is my Midterm work.</p>
-                    <a href="https://denn-selosa020.github.io/it0043tc05/selosa_mpe.html" target="_blank">View
-                        Project</a>
+                <div class="work">
+                    <img src="mobile legends homepage.png" alt="Mobile Legends Homepage">
+                    <div class="layer">
+                        <h3>Mobile Legends Homepage</h3>
+                        <a href="https://denn-selosa020.github.io/it0043tc05/TSA6/selosa_magalong_tsa6.html"
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="flex-box simulator.png" alt="Flex-Box Simulator">
+                    <div class="layer">
+                        <h3>Flex-Box Simulator</h3>
+                        <a href="https://denn-selosa020.github.io/it0043tc05/Selosa_Magalong_TSA7.html"
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="pokemon boxes.png" alt="Pokemon Boxes">
+                    <div class="layer">
+                        <h3>Pokemon Boxes</h3>
+                        <a href="https://denn-selosa020.github.io/it0043tc05/selosa_mpe.html"
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -136,10 +162,14 @@
                     <p><i class="fa-solid fa-paper-plane"></i>franzese.denn.selosa@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>09602651553</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/im.at.your.doorstep?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://x.com/DennSelosa?t=bIze-DiYpurEmHxDVrn-8Q&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i></i></a>
-                        <a href="https://www.instagram.com/im.dead.tired?igsh=OTNxbW1semczejl0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/DENN-SELOSA020" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/im.at.your.doorstep?mibextid=ZbWKwL" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/DennSelosa?t=bIze-DiYpurEmHxDVrn-8Q&s=09" target="_blank"><i
+                                class="fa-brands fa-x-twitter"></i></i></a>
+                        <a href="https://www.instagram.com/im.dead.tired?igsh=OTNxbW1semczejl0" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/DENN-SELOSA020" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="contact-right">
